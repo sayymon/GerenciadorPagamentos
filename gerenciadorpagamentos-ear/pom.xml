@@ -44,6 +44,11 @@
         <!-- Depend on the ejb module and war so that we can package them -->
         <dependency>
             <groupId>br.com.bolcontrol</groupId>
+            <artifactId>gerenciadorpagamentos-jaxb</artifactId>
+            <type>jar</type>
+        </dependency>        
+        <dependency>
+            <groupId>br.com.bolcontrol</groupId>
             <artifactId>gerenciadorpagamentos-web</artifactId>
             <type>war</type>
         </dependency>

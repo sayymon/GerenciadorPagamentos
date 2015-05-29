@@ -33,6 +33,7 @@
         </license>
     </licenses>
     <modules>
+        <module>gerenciadorpagamentos-jaxb</module>
         <module>gerenciadorpagamentos-ejb</module>
         <module>gerenciadorpagamentos-web</module>
         <module>gerenciadorpagamentos-ear</module>
@@ -69,6 +70,15 @@
     <dependencyManagement>
         <dependencies>
 
+            <!-- Define the version of the EJB jar so that we don't need 
+                to repeat ourselves in every module -->
+            <dependency>
+                <groupId>br.com.bolcontrol</groupId>
+                <artifactId>gerenciadorpagamentos-jaxb</artifactId>
+                <version>${project.version}</version>
+                <type>jar</type>
+            </dependency>
+            
             <!-- Define the version of the EJB jar so that we don't need 
                 to repeat ourselves in every module -->
             <dependency>

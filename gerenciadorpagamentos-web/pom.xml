@@ -41,6 +41,13 @@
 
    <dependencies>
 
+      <!-- Dependency on the JAXB module so we can use it's services if needed -->
+      <dependency>
+         <groupId>br.com.bolcontrol</groupId>
+         <artifactId>gerenciadorpagamentos-jaxb</artifactId>
+         <type>jar</type>
+         <scope>provided</scope>
+      </dependency>
       <!-- Dependency on the EJB module so we can use it's services if needed -->
       <dependency>
          <groupId>br.com.bolcontrol</groupId>
